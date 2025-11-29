@@ -78,6 +78,9 @@ public class   LoveYouPrincess {
         Image img2 = icon2.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
         northPanel.add(new JLabel(new ImageIcon(img2)));
         frame.add(northPanel, BorderLayout.NORTH);
+        Image img3 = icon3.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+        northPanel.add(new JLabel(new ImageIcon(img3)));
+        frame.add(northPanel, BorderLayout.NORTH);
 
 
         // Δημιουργία του πεδίου κειμένου (JLabel) για εμφάνιση των μηνυμάτων
