@@ -68,6 +68,9 @@ public class   LoveYouPrincess {
 // --- 1. Πάνελ με 3 Στατικές Εικόνες στην κορυφή (NORTH) ---
         JPanel northPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10)); // Κεντράρισμα με κενά
         northPanel.setOpaque(false); // Διαφανές για να φαίνεται το ροζ φόντο του frame
+        Image img3 = icon3.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
+        northPanel.add(new JLabel(new ImageIcon(img3)));
+        frame.add(northPanel, BorderLayout.NORTH);
         ImageIcon icon = new ImageIcon("src/images/3.png");
         Image img = icon.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
         northPanel.add(new JLabel(new ImageIcon(img)));
@@ -78,9 +81,7 @@ public class   LoveYouPrincess {
         Image img2 = icon2.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
         northPanel.add(new JLabel(new ImageIcon(img2)));
         frame.add(northPanel, BorderLayout.NORTH);
-        Image img3 = icon3.getImage().getScaledInstance(300, 300, Image.SCALE_SMOOTH);
-        northPanel.add(new JLabel(new ImageIcon(img3)));
-        frame.add(northPanel, BorderLayout.NORTH);
+
 
 
         // Δημιουργία του πεδίου κειμένου (JLabel) για εμφάνιση των μηνυμάτων
